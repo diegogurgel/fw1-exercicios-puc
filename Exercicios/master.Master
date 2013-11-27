@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="Exercicios.master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="V/assets/app.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+                    <asp:Menu ID="Menu1" runat="server">
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/fatorial.aspx" Text="Fatorial" Value="Fatorial"></asp:MenuItem>
+                    <asp:MenuItem Text="Cadastro PF" Value="Cadastro PF" NavigateUrl="~/CadastroPF.aspx?cad=pf"></asp:MenuItem>
+                    <asp:MenuItem Text="Cadastro PJ" Value="Cadastro PJ" NavigateUrl="~/CadastroPF.aspx?cad=pj"></asp:MenuItem>
+                    <asp:MenuItem Text="Visualizar" Value="Visualizar">
+                        <asp:MenuItem Text="PF" Value="PF" NavigateUrl="~//visualizar.aspx?cad=pf&amp;show=all"></asp:MenuItem>
+                        <asp:MenuItem Text="PJ" Value="PJ" NavigateUrl="~//visualizar.aspx?cad=pj&amp;show=all"></asp:MenuItem>
+                    </asp:MenuItem>
+                </Items>
+            </asp:Menu>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+
+        
+        </asp:ContentPlaceHolder>
+
+    </form>
+</body>
+</html>
